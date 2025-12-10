@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Day 1 行程｜日本六天五夜旅遊規劃</title>
+    <style>
+        body {
+            font-family: "標楷體", "新細明體", sans-serif;
+            background-color: #f9f0e8;
+            margin: 0;
+        }
+
+        .wrapper {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px 0 40px 0;
+        }
+
+        /* 上面的紅色日期條 */
+        .day-header {
+            background-color: #b63b46;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .day-header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .day-header p {
+            margin: 5px 0 0 0;
+        }
+
+        /* 整個卡片區 */
+        .card {
+            background-color: #ffe9d3;
+            padding: 20px 10px 30px 10px;
+            border-radius: 15px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        .card-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* 每一站的泡泡 */
+        .stop {
+            background-color: #fdf3e7;
+            border-radius: 60px;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px 15px;
+        }
+
+        .stop img {
+            width: 70px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .stop-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .stop-text h3 {
+            margin: 0 0 3px 0;
+            font-size: 18px;
+        }
+
+        .stop-text p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* 直向箭頭 */
+        .arrow {
+            text-align: center;
+            font-size: 26px;
+            margin: 5px 0;
+        }
+
+        /* 底下詳細交通說明 */
+        .detail {
+            width: 85%;
+            margin: 20px auto 0 auto;
+            background-color: #fffaf5;
+            border-radius: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+
+        .detail h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        .detail ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        /* 返回首頁按鈕 */
+        .back {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #b63b46;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .back a:hover {
+            background-color: #912c36;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- 上方日期條 -->
+        <div class="day-header">
+            <h1>1/19　星期一　DAY 1</h1>
+            <p>住家 → 桃園機場 → 關西機場 → 飯店</p>
+        </div>
+
+        <!-- 主卡片 -->
+        <div class="card">
+            <div class="card-title">Day 1 路線圖</div>
+
+            <!-- 住家 -->
+            <div class="stop">
+                <img src="img/home.png" alt="住家">
+                <div class="stop-text">
+                    <h3>住家</h3>
+                    <p>整理行李、確認護照與機票，準備出發前往桃園機場。</p>
+                </div>
+            </div>
+
+            <div class="arrow">⬇</div>
+
+            <!-- 桃園機場 -->
+            <div class="stop">
+                <img src="img/airport-tpe.png" alt="桃園機場">
+                <div class="stop-text">
+                    <h3>桃園機場</h3>
+                    <p>辦理報到、托運行李，準備搭機飛往關西機場。</p>
+                </div>
+            </div>
+
+            <div class="arrow">⬇</div>
+
+            <!-- 關西機場 -->
+            <div class="stop">
+                <img src="img/airport-kix.png" alt="關西機場">
+                <div class="stop-text">
+                    <h3>關西機場</h3>
+                    <p>入境日本、領行李後前往電車月台，準備搭乘電車進市區。</p>
+                </div>
+            </div>
+
+            <div class="arrow">⬇</div>
+
+            <!-- 飯店 -->
+            <div class="stop">
+                <img src="img/hotel.png" alt="飯店">
+                <div class="stop-text">
+                    <h3>飯店</h3>
+                    <p>Check in、放行李，稍作休息後可以在附近散步逛逛。</p>
+                </div>
+            </div>
+
+            <!-- 詳細交通說明 -->
+            <div class="detail">
+                <h3>交通方式詳細說明</h3>
+                <ul>
+                    <li>搭乘：南海特急，自關西機場上車，於天下茶屋下車，約 34 分（5 站）。</li>
+                    <li>步行：約 3 分鐘，前往堺筋線月台。</li>
+                    <li>搭乘：堺筋線，自天下茶屋上車，於長堀橋下車，約 7 分（4 站）。</li>
+                    <li>步行：約 4 分鐘，抵達大阪東心齋橋微笑飯店。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 返回首頁 -->
+        <div class="back">
+            <a href="index.html">← 回日本旅遊首頁</a>
+        </div>
+
+    </div>
+</body>
+</html>
