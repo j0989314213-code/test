@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大阪京都自由行攻略</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding-top: 70px;
+    }
+
+    nav {
+      background-color: #f8f9fa;
+    }
+
+    table th, table td {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-left: 15px;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      color: blue;
+    }
+  </style>
+
+  <script>
+    function toggleFaq(id) {
+      const elem = document.getElementById(id);
+      elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+
+<body>
+
+<!-- 導覽列 -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">大阪京都自由行</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+        <li class="nav-item"><a class="nav-link" href="#itinerary">行程總覽</a></li>
+        <li class="nav-item"><a class="nav-link" href="#osaka">大阪</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kyoto">京都</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prepare">交通/準備</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home">
+  <div class="container text-center">
+    <h1>大阪與京都自由行攻略</h1>
+    <p>整合行程、景點與行前準備，協助自由行旅客快速掌握旅遊資訊。</p>
+  </div>
+</header>
+
+<main>
+
+<!-- 行程總覽 -->
+<section id="itinerary">
+  <div class="container">
+    <h2>行程總覽</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>日期</th>
+          <th>行程內容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1/19</td><td>住家 → 桃園機場 → 關西機場 → 飯店</td></tr>
+        <tr><td>1/20</td><td>環球影城</td></tr>
+        <tr><td>1/21</td><td>大阪城 → 通天閣 → 難波八阪神社</td></tr>
+        <tr><td>1/22</td><td>清水寺 → 三年坂 → 二年坂 → 八坂神社 → 祇園花見小路</td></tr>
+        <tr><td>1/23</td><td>讀賣電視台 → 心齋橋 → 道頓堀</td></tr>
+        <tr><td>1/24</td><td>飯店 → 關西機場 → 桃園機場 → 住家</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 大阪 -->
+<section id="osaka">
+  <div class="container">
+    <h2>大阪旅遊</h2>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <ul>
+          <li>環球影城</li>
+          <li>大阪城</li>
+          <li>通天閣</li>
+          <li>難波八阪神社</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <p>本區介紹大阪主要旅遊景點，可搭配相關照片進行展示。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 京都 -->
+<section id="kyoto">
+  <div class="container">
+    <h2>京都旅遊</h2>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <ul>
+          <li>清水寺</li>
+          <li>三年坂、二年坂</li>
+          <li>八坂神社</li>
+          <li>祇園花見小路</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6">
+        <p>本區介紹京都文化景點，呈現京都的歷史與觀光特色。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 交通與行前準備 -->
+<section id="prepare">
+  <div class="container">
+    <h2>交通與行前準備</h2>
+
+    <h4>交通票券建議</h4>
+    <ul>
+      <li>JR 交通票券</li>
+      <li>地鐵一日券</li>
+      <li>巴士票</li>
+    </ul>
+
+    <h4>行前準備清單</h4>
+    <ul>
+      <li>護照</li>
+      <li>網卡或 Wi-Fi 機</li>
+      <li>日幣現金</li>
+      <li>常備藥品</li>
+    </ul>
+
+    <h4>互動 FAQ</h4>
+    <p class="faq-question" onclick="toggleFaq('faq1')">點我查看 1/20 環球影城行程</p>
+    <p id="faq1" class="faq-answer">全天安排環球影城，建議提早入園，下午可逛周邊商店。</p>
+
+    <p class="faq-question" onclick="toggleFaq('faq2')">點我查看 1/21 大阪行程</p>
+    <p id="faq2" class="faq-answer">上午大阪城，下午通天閣，晚上前往難波八阪神社。</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="text-center mt-5 mb-3 border-top">
+  <p>&copy; 2025 大阪京都自由行攻略</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
